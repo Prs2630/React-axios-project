@@ -37,16 +37,14 @@
   }
 }
 
-h1{
+h1 {
   background-color: darkblue;
 }
-body{
+body {
   border: #350a0a;
-margin: 250px;
-margin-top: 50px;
-
+  margin: 250px;
+  margin-top: 50px;
 }
-button{
+button {
   background-color: red;
 }
- 

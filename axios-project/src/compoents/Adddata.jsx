@@ -11,6 +11,11 @@ const Adddata = () => {
     axios.post("https://cryptic-everglades-50429.herokuapp.com/addData", state).then(data => {
       console.log(data["data"])
       console.log(state)
+      setState({
+        name: "",
+        company: ""
+    
+      })
     }).catch(err => {
       console.log(err)
     })
@@ -24,8 +29,8 @@ const Adddata = () => {
     <h2>hello user!!</h2>
     <div className='container'>
 
-      <input type="text" name="name" placeholder='enter name' onChange={handleChange} />
-      <input type="text" name="company" placeholder='company name' onChange={handleChange} />
+      <input type="text" name="name" placeholder='enter name' value={state.name} onChange={handleChange} />
+      <input type="text" name="company" placeholder='company name' value={state.company} onChange={handleChange} />
       <div><button onClick={Add}>Add User</button>
       </div>
 

@@ -9,8 +9,8 @@ function App() {
 
   return (
     <div className="App">
-      <Adddata/>
-      <Showdata/>
+      <Adddata />
+      <Showdata />
     </div>
   )
 }
